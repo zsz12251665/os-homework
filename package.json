@@ -4,6 +4,7 @@
   "description": "A Retro Calculator",
   "main": "main.js",
   "scripts": {
+    "build": "electron-builder --dir",
     "test": "electron ."
   },
   "keywords": [
@@ -13,9 +14,7 @@
   "author": "zsz12251665",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^15.3.1"
-  },
-  "dependencies": {
-    "dayjs": "^1.10.7"
+    "electron": "^15.3.1",
+    "electron-builder": "^22.13.1"
   }
 }

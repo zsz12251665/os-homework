@@ -14,5 +14,3 @@ contextBridge.exposeInMainWorld('$saveFile', async (text) => {
 	if (!result.canceled)
 		fs.writeFileSync(result.filePath, text, { encoding: 'utf-8' });
 });
-
-contextBridge.exposeInMainWorld('$now', () => dayjs().format('YYYY-MM-DD HH:mm:ss'));
