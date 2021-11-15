@@ -1,0 +1,21 @@
+{
+  "name": "os-homework",
+  "version": "1.0.0",
+  "description": "A Retro Calculator",
+  "main": "main.js",
+  "scripts": {
+    "test": "electron ."
+  },
+  "keywords": [
+    "electron",
+    "calculator"
+  ],
+  "author": "zsz12251665",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^15.3.1"
+  },
+  "dependencies": {
+    "dayjs": "^1.10.7"
+  }
+}
