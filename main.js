@@ -1,8 +1,6 @@
 const { app, dialog, ipcMain, BrowserWindow, Menu } = require('electron');
 const path = require('path');
 
-console.log(path.join(__dirname, 'preload.js'));
-
 function createWindow() {
 	Menu.setApplicationMenu(null);
 	const mainWindow = new BrowserWindow({

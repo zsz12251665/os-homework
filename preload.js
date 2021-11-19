@@ -1,5 +1,4 @@
 const { contextBridge, ipcRenderer } = require('electron');
-const dayjs = require('dayjs');
 const fs = require('fs');
 contextBridge.exposeInMainWorld('$openFile', async () => {
 	const result = await ipcRenderer.invoke('openFile');
