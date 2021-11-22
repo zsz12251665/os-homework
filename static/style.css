@@ -1,0 +1,55 @@
+button:focus, button:focus-visible, button:focus-within {
+	box-shadow: none!important;
+}
+
+footer {
+	user-select: none;
+}
+
+span.frac {
+	margin: 0 -5%;
+}
+
+var {
+	font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+div#clock {
+	opacity: 20%;
+	pointer-events: none;
+	user-select: none;
+}
+
+div#clock > div {
+	position: absolute;
+	top: calc(50vh - 100px);
+	left: calc(50vw - 100px);
+	height: 200px;
+	width: 200px;
+}
+
+div#clock > div[id] > img {
+	animation-name: clock;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+div#hour > img {
+	animation-duration: 43200s;
+}
+
+div#minute > img {
+	animation-duration: 3600s;
+}
+
+div#second > img {
+	animation-duration: 60s;
+}
+
+@keyframes clock {
+	from {
+		transform: rotate(0deg);
+	} to {
+		transform: rotate(360deg);
+	}
+}
