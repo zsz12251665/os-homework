@@ -79,11 +79,7 @@ class Calculator {
 		'L': 'log',
 		'Escape': 'clear',
 		'Delete': 'backspace',
-		'Backspace': 'backspace',
-		's': 'import',
-		'S': 'import',
-		'o': 'export',
-		'O': 'export'
+		'Backspace': 'backspace'
 	};
 	memory = 0;
 	input = '';
